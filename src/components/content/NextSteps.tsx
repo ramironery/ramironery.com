@@ -1,26 +1,27 @@
 import Link from "next/link";
-import { resolveMany } from "@/lib/navigation";
+import { resolveTopicRef } from "@/lib/content-index";
 
 export function NextSteps({ items }: { items: string[] }) {
   if (!items?.length) return null;
-
-  const resolved = resolveMany(items);
 
   return (
     <section className="mt-10">
       <h3 className="font-semibold mb-2">Próximos passos</h3>
       <ul className="list-disc pl-6">
-        {resolved.map(({ slug, ref }) => (
-          <li key={slug}>
-            {ref ? (
-              <Link className="underline" href={ref.href}>
-                {ref.title}
-              </Link>
-            ) : (
-              <span>{slug}</span>
-            )}
-          </li>
-        ))}
+        {items.map((ref) => {
+          const t = resolveTopicRef(ref);
+          return (
+            <li key={ref}>
+              {t ? (
+                <Link className="underline" href={t.href}>
+                  {t.meta.title}
+                </Link>
+              ) : (
+                <span>{ref}</span>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

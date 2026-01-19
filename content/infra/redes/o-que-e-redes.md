@@ -4,8 +4,8 @@ area: "infra"
 subarea: "redes"
 category: "fundamentos"
 prerequisites:
-  - fundamentos
-  - sistemas-operacionais
+  - o-que-e-infraestrutura
+  - o-que-e-sistema-operacional
 next_topics:
   - tcp-ip
   - dns

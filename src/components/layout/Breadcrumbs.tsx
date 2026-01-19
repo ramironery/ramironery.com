@@ -1,5 +1,18 @@
 import Link from "next/link";
-import { areaTitle, resolveTopic, subareaTitle } from "@/lib/navigation";
+
+function areaTitle(area: string) {
+  const map: Record<string, string> = {
+    infra: "Infraestrutura",
+    dev: "Desenvolvimento",
+    cloud: "Cloud",
+    ia: "Inteligência Artificial",
+  };
+  return map[area] ?? area;
+}
+
+function humanize(s: string) {
+  return s.replace(/-/g, " ");
+}
 
 export function Breadcrumbs({
   area,
@@ -10,10 +23,6 @@ export function Breadcrumbs({
   subarea: string;
   title: string;
 }) {
-  const areaHref = `/${area}`;
-  const subareaRef = resolveTopic(subarea);
-  const subareaHref = subareaRef?.href ?? `/${area}/${subarea}`;
-
   return (
     <nav className="text-sm mb-6">
       <ol className="flex flex-wrap gap-2 text-gray-600">
@@ -24,14 +33,14 @@ export function Breadcrumbs({
         </li>
         <li>›</li>
         <li>
-          <Link className="underline" href={areaHref}>
+          <Link className="underline" href={`/${area}`}>
             {areaTitle(area)}
           </Link>
         </li>
         <li>›</li>
         <li>
-          <Link className="underline" href={subareaHref}>
-            {subareaTitle(area, subarea)}
+          <Link className="underline" href={`/${area}/${subarea}`}>
+            {humanize(subarea)}
           </Link>
         </li>
         <li>›</li>

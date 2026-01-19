@@ -4,7 +4,7 @@ area: "infra"
 subarea: "sistemas-operacionais"
 category: "conceitos"
 prerequisites:
-  - fundamentos
+  - o-que-e-infraestrutura
 next_topics:
   - linux
   - windows-server
