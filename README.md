@@ -1,8 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IT Hub (Projeto em desenvolvimento!)
+[![NPM](https://img.shields.io/npm/l/react)]([https://github.com/ramironery/ramironery.com/blob/main/LICENSE) 
 
-## Getting Started
+# Sobre o projeto
 
-First, run the development server:
+https://ramironery.com
+
+ItHub é um portal educacional curado de TI, em português, focado em iniciantes e estudantes, que organiza o universo técnico em trilhas lógicas (tipo roadmap.sh), oferecendo contexto, pré-requisitos e fontes confiáveis para aprofundamento — com potencial de virar plataforma educacional e hub de parcerias.
+
+# Tecnologias utilizadas
+## Back end
+- NodeJS
+
+# Front end
+- HTML / CSS / JS / TypeScript
+- ReactJS 
+- React Native
+- NextJS
+## Implantação em produção
+- Back end: 
+- Front end web: 
+- Banco de dados: 
+
+# Como executar o projeto
+
+Pré-requisitos: Node >=20
+
+```bash
+# clonar repositório
+git clone git@github.com:ramironery/ramironery.com.git
+# entrar na pasta do projeto back end
+cd backend
+
+# executar o projeto
+Primeiro, iniciar o servidor de desenvolvimento :
 
 ```bash
 npm run dev
@@ -13,24 +43,12 @@ pnpm dev
 # or
 bun dev
 ```
+Abra o link [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Autor
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ramiro Nery de Souza
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://www.linkedin.com/in/ramironery
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
