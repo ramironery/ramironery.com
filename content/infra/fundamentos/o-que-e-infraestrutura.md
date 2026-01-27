@@ -19,7 +19,7 @@ tags:
 
 Infraestrutura de TI é o conjunto de **recursos físicos e lógicos** que sustentam sistemas, aplicações e dados de uma organização. Ela inclui **hardware**, **sistemas operacionais**, **rede**, **armazenamento**, **virtualização**, **segurança básica** e, muitas vezes, serviços de **cloud**.
 
-Pense em infraestrutura como a “base” que permite que tudo funcione: sites, ERPs, e-mails corporativos, bancos de dados, aplicações internas, acesso remoto, etc.
+Pense em infraestrutura como a “base” que permite que tudo funcione: sites, ERPs, e-mails corporativos, bancos de dados, aplicações internas, acesso remoto, etc
 
 ## Para que serve no mundo real
 
