@@ -5,7 +5,12 @@
 
 https://ramironery.com
 
-ItHub é um portal educacional curado de TI, em português, focado em iniciantes e estudantes, que organiza o universo técnico em trilhas lógicas (tipo roadmap.sh), oferecendo contexto, pré-requisitos e fontes confiáveis para aprofundamento — com potencial de virar plataforma educacional e hub de parcerias.
+Este projeto é uma plataforma centralizada para aulas e documentação de TI organizadas. Todo o conteúdo educacional é armazenado em arquivos Markdown estruturados (0) contendo dados essenciais de relacionamento definidos por Metadados de Conteúdo (1). Um poderoso Indexador de Conteúdo (2) lê e cataloga cada aula na inicialização, o que permite que o site crie páginas de conteúdo dinâmicas (5). Essa estrutura garante que os percursos de aprendizagem sejam coesos, pois os componentes de navegação (6) usam um Resolvedor de Referências (4) para vincular automaticamente as aulas (3) com base em seus relacionamentos internos.
+
+# Visão geral visual
+
+## Capítulos
+
 
 # Tecnologias utilizadas
 ## Back end
