@@ -12,6 +12,7 @@
 
 # testing
 /coverage
+.eslint.*
 
 # next.js
 /.next/
