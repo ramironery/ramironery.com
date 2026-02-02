@@ -64,6 +64,9 @@ function readTopic(filePath: string): TopicEntry | null {
     prerequisites: Array.isArray(meta.prerequisites) ? meta.prerequisites : [],
     next_topics: Array.isArray(meta.next_topics) ? meta.next_topics : [],
     tags: Array.isArray(meta.tags) ? meta.tags : [],
+    summary: typeof meta.summary === "string" ? meta.summary : undefined,
+    author: typeof meta.author === "string" ? meta.author : undefined,
+    coverImage: typeof meta.coverImage === "string" ? meta.coverImage : undefined,
   };
 
   const href = `/${area}/${subarea}/${slug}`;

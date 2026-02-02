@@ -6,4 +6,7 @@ export interface ContentMeta {
   prerequisites: string[];
   next_topics: string[];
   tags: string[];
+  summary?: string;
+  author?: string;
+  coverImage?: string;
 }
