@@ -51,3 +51,6 @@ next-env.d.ts
 temp/Captura de tela de 2026-02-02 12-45-12.png
 eslint.config.mjs
 eslint.config.mjs
+package-lock.json
+package.json
+postcss.config.mjs
