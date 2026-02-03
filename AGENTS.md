@@ -33,3 +33,10 @@
 ## Configuration Tips
 - Required Node.js: >= 20.
 - Content is Markdown-driven; keep front matter consistent when adding new lessons.
+
+## Active Technologies
+- TypeScript, Node.js >= 20, Next.js App Router 16 + Next.js, React, Tailwind CSS v4 (PostCSS) (001-home-page-medium)
+- Arquivos Markdown em /home/ramiro/Documentos/Projetos/hub-ti/hub-ti/content (indexador local) (001-home-page-medium)
+
+## Recent Changes
+- 001-home-page-medium: Added TypeScript, Node.js >= 20, Next.js App Router 16 + Next.js, React, Tailwind CSS v4 (PostCSS)

@@ -1,0 +1,103 @@
+openapi: 3.0.3
+info:
+  title: Home Page Feed API (Planejado)
+  version: 0.1.0
+  description: Contratos planejados para listar feed, destaques e topicos.
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/feed:
+    get:
+      summary: Lista itens do feed principal
+      responses:
+        "200":
+          description: Lista de conteudos
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Conteudo"
+  /api/highlights:
+    get:
+      summary: Lista conteudos em destaque
+      responses:
+        "200":
+          description: Lista de destaques
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Destaque"
+  /api/topics:
+    get:
+      summary: Lista topicos recomendados
+      responses:
+        "200":
+          description: Lista de topicos
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Topico"
+components:
+  schemas:
+    Conteudo:
+      type: object
+      required: [slug, title, summary, area, subarea, category, tags]
+      properties:
+        slug:
+          type: string
+        title:
+          type: string
+        summary:
+          type: string
+        area:
+          type: string
+        subarea:
+          type: string
+        category:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+        author:
+          type: string
+          nullable: true
+        coverImage:
+          type: string
+          nullable: true
+    Destaque:
+      type: object
+      required: [conteudoSlug, label]
+      properties:
+        conteudoSlug:
+          type: string
+        label:
+          type: string
+        motivo:
+          type: string
+          nullable: true
+    Topico:
+      type: object
+      required: [name, slug]
+      properties:
+        name:
+          type: string
+        slug:
+          type: string
+        quantidadeItens:
+          type: integer
+          nullable: true
