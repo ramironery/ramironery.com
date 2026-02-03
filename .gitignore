@@ -13,6 +13,7 @@
 # testing
 /coverage
 .eslint.*.*
+.eslint.config.mjs
 
 # next.js
 /.next/
@@ -47,3 +48,6 @@ next-env.d.ts
 
 # specify
 .specify/
+temp/Captura de tela de 2026-02-02 12-45-12.png
+eslint.config.mjs
+eslint.config.mjs
